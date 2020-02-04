@@ -1,6 +1,18 @@
 @use './reset.scss';
 
-.navitems ul{
-        list-style: none;
-        display: inline-block;
+*{
+font-family: 'Nunito', sans-serif;
+}
+.h-container{
+display: inline;
+padding: 10px;
+}
+.navitems li {
+list-style-type: none;
+display: inline;
+margin: 20px;
+}
+.navitems{
+float:right;
+margin: 5px 30px;
 }
