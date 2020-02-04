@@ -1,28 +1,57 @@
 @use './reset.scss';
 
 *{
-    font-family: 'Nunito', sans-serif;
-  }
-  .h-container{
-    padding: 2.5px;
-  }
-  .h-container >img{
-  margin-left: 60px;
-  }
-  .navitems li {
-    list-style-type: none;
-    display: inline;
-    padding: 10px;
-  }
-  .navitems{
-    float:right;
-    margin-right: 100px;
-  }
-  .button{
-    margin-right: 250px;
-    float: right;
-    color: red !important;
-  }
-  section .banner{
-    background-image: url('C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg');
-  }
+font-family: 'Nunito', sans-serif;
+}
+.h-container{
+  padding: 2.5px;
+}
+.h-container >img{
+margin-left: 60px;
+}
+.navitems li {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+}
+.navitems{
+  float:right;
+  margin-right: 100px;
+}
+.navbutton{
+  margin-right: 150px;
+  float: right;
+}
+section{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner #logo{
+margin-top:50px;
+height: 150px;
+margin-left: auto;
+margin-right: auto;
+width:100%;
+}
+.tag{
+  margin-top:50px;
+  text-align: center;
+}
+.search_restaurant{
+  text-align: center;
+  padding: 50px;
+}
+.dropdown{
+  display: inline-block;
+}
+.btn-secondary{
+  color:black !important;
+  background-color: white !important;
+  text-align: center !important;
+}
+.btn-outline-dark{
+border: 2px solid white !important;
+color:white !important;
+}

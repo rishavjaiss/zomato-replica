@@ -22,13 +22,49 @@
   margin-right: 100px;
 }
 
-.button {
-  margin-right: 250px;
+.navbutton {
+  margin-right: 150px;
   float: right;
-  color: red !important;
 }
 
-section .banner {
-  background-image: url("C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg");
+section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url("C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner #logo {
+  margin-top: 50px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.tag {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.search_restaurant {
+  text-align: center;
+  padding: 50px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.btn-secondary {
+  color: black !important;
+  background-color: white !important;
+  text-align: center !important;
+}
+
+.btn-outline-dark {
+  border: 2px solid white !important;
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */

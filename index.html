@@ -20,20 +20,31 @@
                     <a id="nav_item_2"><strong>Book a Table</strong></a></li>
                 <li><img src="images/gold.svg" alt="Get App" width="30" height="30">
                     <a id="nav_item_3"><strong>Zomato Gold</strong></a></li>
-            </ul>
-            <div class="button">
-              <button type="button" class="btn btn-link">Log in</button>
+            </ul><br>
+            <div class="navbutton">
+              <button type="button" class="btn btn-link" style="color:white;">Log in</button>
               <button type="button" class="btn btn-outline-dark">Create an Account</button>
             </div>
         </div>
     </header><br>
     <section class="banner">
-      <img src="C:\Users\HP\Documents\Git Projects\zomato-replica\images\zomato_flat_bg_logo.svg" alt="logo" width="100" height="100">
-      <h4>Find the best restaurants, cafés, and bars in Mumbai</h4>
+      <img id="logo" src="C:\Users\HP\Documents\Git Projects\zomato-replica\images\zomato_flat_bg_logo.svg" alt="logo" width="100" height="100">
+      <h2 style="color:white;" class="tag">Find the best restaurants, cafés, and bars in Mumbai</h2>
       <div class="search_restaurant">
-        <input id="searchrest" type="text" placeholder="search for restaurants or cuisines..." size=50>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mumbai</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Kolkata</a>
+            <a class="dropdown-item" href="#">Bangalore</a>
+            <a class="dropdown-item" href="#">New Delhi</a>
+          </div>
+        </div>
+        <input id="searchrest" type="text" placeholder="Search for restaurants or cuisines..." size=50>
         <button type="button" class="btn btn-danger">Search</button>
       </div>
     </section>
-  </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>
