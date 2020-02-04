@@ -22,12 +22,13 @@
   margin-right: 100px;
 }
 
-.btn {
+.button {
+  margin-right: 250px;
   float: right;
   color: red !important;
 }
 
-.banner {
-  margin-right: 250px;
+section .banner {
+  background-image: url("C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg");
 }
 /*# sourceMappingURL=style.css.map */
