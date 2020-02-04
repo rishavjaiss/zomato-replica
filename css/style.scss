@@ -1,18 +1,27 @@
 @use './reset.scss';
 
 *{
-font-family: 'Nunito', sans-serif;
-}
-.h-container{
-display: inline;
-padding: 10px;
-}
-.navitems li {
-list-style-type: none;
-display: inline;
-margin: 20px;
-}
-.navitems{
-float:right;
-margin: 5px 30px;
-}
+    font-family: 'Nunito', sans-serif;
+  }
+  .h-container{
+    padding: 2.5px;
+  }
+  .h-container >img{
+  margin-left: 60px;
+  }
+  .navitems li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+  }
+  .navitems{
+    float:right;
+    margin-right: 100px;
+  }
+  .btn{
+    float: right;
+    color: red !important;
+  }
+  .banner{
+    margin-right: 250px;
+  }
