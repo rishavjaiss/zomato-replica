@@ -27,7 +27,7 @@
   float: right;
 }
 
-section {
+.banner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url("C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("C:/Users/HP/Documents/Git Projects/zomato-replica/images/bg.jpg");
   background-repeat: no-repeat;
@@ -93,5 +93,44 @@ section {
 
 .rightcollection {
   float: right;
+}
+
+@media screen and (max-width: 996px) {
+  .collections #ad {
+    display: none;
+  }
+}
+
+.category-list {
+  width: 200px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.categories {
+  margin-left: 70px;
+}
+
+#list {
+  margin: auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.category-list li {
+  padding: 25px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
