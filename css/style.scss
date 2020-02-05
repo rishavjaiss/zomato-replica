@@ -69,11 +69,16 @@ color:white !important;
   width: 85%;
 }
 .collections{
-  margin:50px;
+  margin-left:70px;
+  margin-top:50px;
+  margin-right: 525px;
   max-width: fit-content;
 }
 .leftcollection{
   float: left;
+}
+.rightcollection{
+  float:right;
 }
 
 // quick searches section
