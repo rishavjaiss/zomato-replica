@@ -67,4 +67,25 @@ section {
   border: 2px solid white !important;
   color: white !important;
 }
+
+.widget {
+  float: right;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.widget .btn-success {
+  width: 85%;
+}
+
+.collections {
+  margin: 50px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.leftcollection {
+  float: left;
+}
 /*# sourceMappingURL=style.css.map */

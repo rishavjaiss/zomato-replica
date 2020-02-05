@@ -3,6 +3,9 @@
 *{
 font-family: 'Nunito', sans-serif;
 }
+
+// section 1 started
+
 .h-container{
   padding: 2.5px;
 }
@@ -55,3 +58,22 @@ width:100%;
 border: 2px solid white !important;
 color:white !important;
 }
+
+// collection section starts
+.widget{
+  float: right;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+.widget .btn-success{
+  width: 85%;
+}
+.collections{
+  margin:50px;
+  max-width: fit-content;
+}
+.leftcollection{
+  float: left;
+}
+
+// quick searches section
