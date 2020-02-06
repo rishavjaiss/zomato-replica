@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Zomato Replica</title>
   </head>
-  <body>
-    <header class="h-container">
+  <body style="background-color: rgba(228, 225, 225, 0.521);">
+    <header class="h-container" style="background-color: white;">
         <img src="images/get-the-app-plain.svg" alt="Get App" width="40" height="40">
         <a><strong>Get the App</strong></a>
         <div class="navitems">
@@ -45,9 +45,9 @@
       </div>
     </section>
     <div class="widget">
-      <div class="card" style="width: 20%vw;">
+      <div class="card" style="width: 20%vw; padding: 5px;">
         <div class="card-body">
-          <h5 class="card-title">Order Food Online</h5>
+          <h5 class="card-title"><strong>Order Food Online</strong></h5>
           <h6 class="card-subtitle mb-2 text-muted">Best restaurants delivering at your footstep</h6><br>
           <h6><strong>Enter your delivery location</strong></h6>
           <input class="search-del" type="text" placeholder="Type delivery location here" size="30">
@@ -117,9 +117,9 @@
           </div>
         </div>
       </div>
-      <button style="color: red; background-color:beige;" type="button" class="btn btn-block">All Collections in Mumbai</button><br>
-    </div><br>
-    <section class="categories">
+      <button style="color: red; background-color: white;" type="button" class="btn btn-block">All Collections in Mumbai</button><br>
+    </div>
+    <section class="categories" style="background-color: white;">
       <h3 class="cat-title"><strong>Quick Searches</strong></h3>
       <p id="cat-subtitle" style="color: slategrey;">Discover restaurants by type of meal</p>
       <div id="list">
@@ -134,8 +134,8 @@
           <li><img src="images/desserts.png" alt="Desserts" width="80px" height="80px"><br>Desserts & Bakes</li>
         </ul>
       </div>
-    </section><br>
-    <section class="localities">
+    </section>
+    <section class="localities" style="background-color: white;">
       <h3 id="loc-title"><strong>Popular localities in and around Mumbai</strong></h3>
       <p id="loc-subtitle" style="color: slategrey;">Explore restaurants, bars, and cafés by locality</p>
       <ul class="locality-list-1">
@@ -175,6 +175,34 @@
         <li>Kandivali East <text style="color: slategrey;">( places)</text></li>
       </ul>
     </section>
+    <section class="app">
+      <img id="iphone" src="images/iphone.png" alt="Iphone">
+      <div class="app-text">
+        <h4><strong>Get the Zomato App</strong></h4>
+        <p style="color: slategrey;">See restaurants and menus of nearby restaurants and bookmark your favourite places on the go</p>
+        <p>We'll send you a link,open it on your phone to download the app</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter phone number" aria-label="Recipient's phone number" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary btn-success" style="color: white;" type="button" id="button-addon2">Test App Link</button>
+          </div>
+        </div>
+        <p style="text-align: center;"><strong>OR</strong></p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter your email id" aria-label="Recipient's email" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary btn-success" style="color: white;" type="button" id="button-addon2">Email App Link</button>
+          </div>
+        </div>
+        <img src="images/applestore.png" alt="AppleStore" height="35px" width="25%">
+        <img src="images/googleplay.png" alt="PlayStore" height="35px" width="25%">
+      </div>        
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

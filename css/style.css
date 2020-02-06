@@ -80,7 +80,7 @@
   max-width: fit-content;
   margin-left: 70px;
   margin-top: 50px;
-  margin-right: auto;
+  margin-right: 70px;
 }
 
 .leftcollection {
@@ -116,6 +116,8 @@
 
 .categories {
   margin-left: 70px;
+  padding: 2%;
+  margin-right: 70px;
 }
 
 #list {
@@ -132,6 +134,9 @@
 
 .localities {
   margin-left: 70px;
+  padding: 2%;
+  margin-top: 20px;
+  margin-right: 70px;
 }
 
 .locality-list-1, .locality-list-2, .locality-list-3 {
@@ -141,10 +146,37 @@
 }
 
 .locality-list-2 {
-  margin-left: 5%;
+  margin: auto;
 }
 
 .locality-list-3 {
-  margin-left: 5%;
+  margin: auto;
+}
+
+.app-text {
+  width: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-block;
+  padding: 2%;
+  margin-top: 20px;
+  text-align: left;
+  margin: auto;
+}
+
+#iphone {
+  height: 365px;
+  width: auto;
+  margin-top: -275px;
+}
+
+.app {
+  background-color: white;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
