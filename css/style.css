@@ -1,6 +1,6 @@
 @use './reset.scss';
 * {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 .h-container {
@@ -74,25 +74,19 @@
   margin-top: 3%;
 }
 
-.widget .btn-success {
-  width: 85%;
-}
-
 .collections {
   margin-left: 70px;
   margin-top: 50px;
   margin-right: 525px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
 }
 
 .leftcollection {
-  float: left;
+  display: inline-block;
 }
 
 .rightcollection {
-  float: right;
+  display: inline-block;
+  margin-left: 18px;
 }
 
 @media screen and (max-width: 996px) {
@@ -132,5 +126,23 @@
 .category-list li {
   padding: 25px;
   cursor: pointer;
+}
+
+.localities {
+  margin-left: 70px;
+}
+
+.locality-list-1, .locality-list-2, .locality-list-3 {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.locality-list-2 {
+  margin-left: 8%;
+}
+
+.locality-list-3 {
+  margin-left: 8%;
 }
 /*# sourceMappingURL=style.css.map */

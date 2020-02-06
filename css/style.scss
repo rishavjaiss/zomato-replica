@@ -1,7 +1,7 @@
 @use './reset.scss';
 
 *{
-font-family: 'Nunito', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 // section 1 started
@@ -65,20 +65,17 @@ color:white !important;
   margin-right: 5%;
   margin-top: 3%;
 }
-.widget .btn-success{
-  width: 85%;
-}
 .collections{
   margin-left:70px;
   margin-top:50px;
   margin-right:525px;
-  max-width: fit-content;
 }
 .leftcollection{
-  float: left;
+  display: inline-block;
 }
 .rightcollection{
-  float:right;
+  display: inline-block;
+  margin-left: 18px;
 }
 @media screen and (max-width:996px){
   .collections #ad{
@@ -106,4 +103,23 @@ color:white !important;
 .category-list li{
   padding: 25px;
   cursor: pointer;
+}
+
+// localities
+
+.localities{
+  margin-left: 70px;
+}
+.locality-list-1{
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.locality-list-2{
+  @extend .locality-list-1;
+  margin-left: 8%;
+}
+.locality-list-3{
+  @extend .locality-list-1;
+  margin-left: 8%;
 }
