@@ -3,7 +3,6 @@
 *{
   font-family: 'Prompt', sans-serif;
 }
-
 // section 1 started
 
 .h-container{
@@ -66,16 +65,16 @@ color:white !important;
   margin-top: 3%;
 }
 .collections{
+  max-width: fit-content;
   margin-left:70px;
   margin-top:50px;
-  margin-right:525px;
+  margin-right:auto;
 }
 .leftcollection{
   display: inline-block;
 }
 .rightcollection{
   display: inline-block;
-  margin-left: 18px;
 }
 @media screen and (max-width:996px){
   .collections #ad{
@@ -117,9 +116,9 @@ color:white !important;
 }
 .locality-list-2{
   @extend .locality-list-1;
-  margin-left: 8%;
+  margin-left: 5%;
 }
 .locality-list-3{
   @extend .locality-list-1;
-  margin-left: 8%;
+  margin-left: 5%;
 }

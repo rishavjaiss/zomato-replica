@@ -75,9 +75,12 @@
 }
 
 .collections {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   margin-left: 70px;
   margin-top: 50px;
-  margin-right: 525px;
+  margin-right: auto;
 }
 
 .leftcollection {
@@ -86,7 +89,6 @@
 
 .rightcollection {
   display: inline-block;
-  margin-left: 18px;
 }
 
 @media screen and (max-width: 996px) {
@@ -139,10 +141,10 @@
 }
 
 .locality-list-2 {
-  margin-left: 8%;
+  margin-left: 5%;
 }
 
 .locality-list-3 {
-  margin-left: 8%;
+  margin-left: 5%;
 }
 /*# sourceMappingURL=style.css.map */
