@@ -127,7 +127,7 @@
   max-width: fit-content;
 }
 
-.category-list li {
+.category-list > li {
   padding: 25px;
   cursor: pointer;
 }
@@ -173,10 +173,19 @@
 
 .app {
   background-color: white;
-  padding: 5px;
+  padding: 25px;
   margin-top: 20px;
   margin-left: 70px;
   margin-right: 70px;
   text-align: center;
+}
+
+footer {
+  margin-top: 75px;
+}
+
+.footer-wrapper {
+  background-color: rgba(22, 29, 43, 0.87);
+  color: #cacbf1;
 }
 /*# sourceMappingURL=style.css.map */
