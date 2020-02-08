@@ -1,304 +1,632 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="C:/Users/HP/Documents/Git Projects/zomato-replica/css/style.css">
-    <link rel="icon" type="image/png" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png?output-format=webp">
-    <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Zomato Replica</title>
-  </head>
-  <body style="background-color: rgba(228, 225, 225, 0.521);">
-    <header class="h-container" style="background-color: white;">
-        <img src="images/get-the-app-plain.svg" alt="Get App" width="40" height="40">
-        <a><strong>Get the App</strong></a>
-        <div class="navitems">
-            <ul>
-                <li><img src="images/order-online.svg" alt="Order Online" width="40" height="40">
-                    <a id="nav_item_1"><strong>Order Food</strong></a></li>
-                <li><img src="images/book-a-table.svg" alt="Get App" width="40" height="40">
-                    <a id="nav_item_2"><strong>Book a Table</strong></a></li>
-                <li><img src="images/gold.svg" alt="Get App" width="30" height="30">
-                    <a id="nav_item_3"><strong>Zomato Gold</strong></a></li>
-            </ul>
-            <div class="navbutton">
-              <button type="button" class="btn btn-link" style="color:white;">Log in</button>
-              <button type="button" class="btn btn-outline-dark">Create an Account</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="description"
+        content="Mumbai Restaurants - Menus, Photos, Ratings and Reviews for over 28300 Restaurants in Mumbai. Find the Best Restaurants in Mumbai on Zomato - Mumbai Restaurants"
+    />
+    <title>Zomato</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png?output-format=webp"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png?output-format=webp"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="h-container">
+        <!-- navigation -->
+        <div class="header-container row no-gutters">
+            <div class="header-link row no-gutters">
+                <a href="#">
+                    <img src="./images/get-the-app-plain.svg" alt="get the app" />
+                    <span>Get the App</span>
+                </a>
             </div>
+
+            <ul class="header-link-list row no-gutters">
+                <li class="header-link col-auto">
+                    <a href="#" id="nav_item_1">
+                        <img src="./images/order-online.svg" alt="Order Online" />
+                        <span>Order Food</span>
+                    </a>
+                </li>
+
+                <li class="header-link col-auto">
+                    <a href="#" id="nav_item_2">
+                        <img src="./images/book-a-table.svg" alt=" book-a-table" />
+                        <span>Book a Table</span>
+                    </a>
+                </li>
+
+                <li class="header-link col-auto">
+                    <a href="#" id="nav_item_3">
+                        <img src="./images/gold.svg" alt=" Zomao gold" />
+                        <span>Zomato Gold</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
-    <section class="banner">
-      <img id="logo" src="C:\Users\HP\Documents\Git Projects\zomato-replica\images\zomato_flat_bg_logo.svg" alt="logo" width="100" height="100">
-      <h2 style="color:white;" class="tag">Find the best restaurants, cafés, and bars in Mumbai</h2>
-      <div class="search_restaurant">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mumbai</button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Kolkata</a>
-            <a class="dropdown-item" href="#">Bangalore</a>
-            <a class="dropdown-item" href="#">New Delhi</a>
-          </div>
-        </div>
-        <input id="searchrest" type="text" placeholder="Search for restaurants or cuisines..." size=50>
-        <button type="button" class="btn btn-danger">Search</button>
-      </div>
-    </section>
-    <div class="widget">
-      <div class="card" style="width: 20%vw; padding: 5px;">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Order Food Online</strong></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Best restaurants delivering at your footstep</h6><br>
-          <h6><strong>Enter your delivery location</strong></h6>
-          <input class="search-del" type="text" placeholder="Type delivery location here" size="30">
-          <button class="detect-btn">Detect</button><br><br>
-          <button type="button" class="btn btn-success btn-block">Order Food Online!</button><br>
-          <p style="color: rgba(13, 141, 13, 0.952);">Use code<strong> ZOMATO </strong>to get up to 50% OFF.<br>T&Cs apply.</p>
-        </div>
-      </div>
-    </div>
-    <div class="collections">
-      <img id="ad" src="C:\Users\HP\Documents\Git Projects\zomato-replica\images\ad-zomaland.png" alt="Zomaland" width="775px" height="250px"><br><br>
-      <h3><strong>Collections</strong></h3>
-      <p style="color: slategrey;">Explore curated list of top restaurants, cafes, pubs, and bars in mumbai,based on trends</p>
-      <div class="leftcollection">
-        <div class="card mb-3" style="max-width: 450px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="images/trending.jpg" class="card-img" alt="Trending">
+    
+    <main>
+        <!-- banner -->
+        <section class="banner">
+            <div class="banner-wrapper">
+                <ul class="auth-btns row no-gutters justify-content-end">
+                    <li class="auth-btn"><a href="#">Log in</a></li>
+                    <li class="auth-btn"><a href="#">Ceate an account</a></li>
+                </ul>
+
+                <div class="banner-content row no-gutters flex-column justify-content-center align-items-center">
+                    <img src="./images/zomato_flat_bg_logo.svg" alt="Zomato logo" class="banner-logo" />
+
+                    <h1>Find the best Restaurants, cafe and bars in Mumbai</h1>
+
+                    <div class="search-inputs row justify-content-center align-items-center no-gutters">
+
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-secondary dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Mumbai
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Mumbai</a>
+                                    <a href="#" class="dropdown-item">Delhi</a>
+                                    <a href="#" class="dropdown-item">Bangalore</a>
+                                </div>
+                        </div>
+
+                        <div class="search-restaurant">
+                            <input type="text" 
+                                id="search-rest"
+                                class="form-control"
+                                placeholder="Search for restaurants or cuisines..."
+                            />
+                        </div>
+
+                        <button class="btn search-btn" type="button">Search</button>
+
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><strong>Trending This Week</strong></h5>
-                <p class="card-text">Most popular restaurants in town this week.</p>
-              </div>
+        </section>
+        <!-- collection -->
+        <div class="main-container">
+            <section class="collection-container row no-gutters">
+                <section class="sect col-sm-8">
+                    <div class="ad">
+                        <img src="./images/ad-zomaland.jpeg" alt="zomoland">
+                    </div>
+
+                <section class="collections">
+                    <h2 class="section-title">Collections</h2>
+
+                    <p class="section-subtitle">
+                        Explore curated lists of top restaurants, cafes, pubs, and bars in Mumbai, based on trends
+                    </p>
+
+                    <ul class="collection-list">
+                        <li class="collection">
+                            <div class="collection-img" style="background-image: url(trending.jpg);">
+                            </div>
+
+                            <div class="collection-content">
+                                <h4>Trending this week</h4>
+                                <p>Most Popular restaurants in town this week</p>
+                            </div>
+                        </li>
+
+                        <li class="collection">
+                            <div class="collection-img" style="background-image: url(mumbai.jpg);">
+                            </div>
+
+                            <div class="collection-content">
+                                <h4>Best of Mumbai</h4>
+                                <p>The hunt fo the highest-rated restaurants in your city</p>
+                            </div>
+                        </li>
+
+                        <li class="collection">
+                            <div class="collection-img" style="background-image: url(open.jpg);">
+                            </div>
+
+                            <div class="collection-content">
+                                <h4>Newly open</h4>
+                                <p>The best new place in town</p>
+                            </div>
+                        </li>
+
+                        <li class="collection">
+                            <div class="collection-img" style="background-image: url(surecrisp.jpeg);">
+                            </div>
+
+                            <div class="collection-content">
+                                <h4>SureCrisp Quick Fries</h4>
+                                <p>turn up the flavour by odering SureCrisp Fries</p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn all-collection-btn" type="button">All collections in Mumbai</button>
+
+                </section>
+                </section>
+
+                    <section class="sect col-sm-4">
+                        <h2 class="section-title order-food-title">Order Food Online!</h2>
+
+                        <p class="section-subtitle">
+                            Best restaurants delivering to yopur door step
+                        </p>
+
+                        <div class="widget">
+                            <h4>Enter your delivery location</h4>
+                            <div class="location-input">
+                                <input type="text" class="form-control" id="search-del" placeholder="Type delivery location here" />
+
+                                <button class="detect-btn" type="button">Detect</button>
+                            </div>
+
+                            <button class="btn order-btn" type="button">Order Food Online!</button>
+
+                            <span class="seperator"></span>
+                            <p>Use Code <b>Zomato</b>To get up to 50% OFF. T&Cs apply.</p>
+                        </div>
+                    </section>
+
+            </section>
+
+            <!-- categories -->
+            <section class="categories">
+                <h2 class="section-title" id="cat-title">Quick Searches</h2>
+
+                <p class="section-subtitle" id="cat-subtitle">
+                    Discover restaurants by type of meal
+                </p>
+
+                <ul class="category-list">
+                    <li class="category">
+                        <img src="./images/delivery.png" alt="Delivery">
+                        <span>Delivery</span>
+                    </li>
+
+                    <li class="category">
+                        <img src="./images/pocket-friendly-delivery.png" alt="Pocket-Friendly Delivery">
+                        <span>Pocet-Friendly Delivery</span>
+                    </li>
+
+                    <li class="category">
+                        <img src="./images/breakfast.png" alt="breakfast">
+                        <span>breakfast</span>
+                    </li>
+
+                    <li class="category">
+                        <img src="./images/lunch.png" alt="lunch">
+                        <span>lunch</span>
+                    </li>
+
+                    <li class="category">
+                        <img src="./images/drinks.png" alt="Drins and Nightlife">
+                        <span>Drins and Nightlife</span>
+                    </li>
+
+                    <li class="category">
+                        <img src="./images/cafes.png" alt="Cafe">
+                        <span>Cafe</span>
+                    </li>
+
+                    <li class="category">
+                        <img src="./images/desserts.png" alt="Dessert & Bakes">
+                        <span>Dessert & Bakes</span>
+                    </li>
+
+                    <li class="category">
+                        <img src="./images/dinner.png" alt="Dinner">
+                        <span>Dinner</span>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- Localities -->
+            <section class="localities">
+                <h2 class="section-title" id="loc-title">Popular localities in and around Mumbai</h2>
+
+                <p class="section-subtitle" id="loc-subtitle">
+                    Explore restaurants, bars, and cafés by locality
+                </p>
+
+                <div class="locality-list-wrapper row no-gutters">
+                    <ul class="locality-list col-auto">
+                        <li class="locality">
+                            <a href="#">Lower Panel <span class="locality-number">(459)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Borivali West <span class="locality-number">(591 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Fort <span class="locality-number">(265 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Colaba <span class="locality-number">(199 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Pali Hill, Bandra West <span class="locality-number">(197 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Veera Desai Area <span class="locality-number">(96 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">panch Pakhadi, Thane West <span class="locality-number">(155 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Mulund West <span class="locality-number">(413 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Oshiwara, Andheri West <span class="locality-number">(254 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Kandivali West <span class="locality-number">(575 places)</span></a>
+                        </li>
+                    </ul>
+
+                    <ul class="locality-list col-auto">
+                        <li class="locality">
+                            <a href="#">Lower Panel <span class="locality-number">(459)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Borivali West <span class="locality-number">(591 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Fort <span class="locality-number">(265 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Colaba <span class="locality-number">(199 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Pali Hill, Bandra West <span class="locality-number">(197 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Veera Desai Area <span class="locality-number">(96 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">panch Pakhadi, Thane West <span class="locality-number">(155 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Mulund West <span class="locality-number">(413 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Oshiwara, Andheri West <span class="locality-number">(254 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Kandivali West <span class="locality-number">(575 places)</span></a>
+                        </li>
+                    </ul>
+
+                    <ul class="locality-list col-auto">
+                        <li class="locality">
+                            <a href="#">Lower Panel <span class="locality-number">(459)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Borivali West <span class="locality-number">(591 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Fort <span class="locality-number">(265 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Colaba <span class="locality-number">(199 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Pali Hill, Bandra West <span class="locality-number">(197 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Veera Desai Area <span class="locality-number">(96 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">panch Pakhadi, Thane West <span class="locality-number">(155 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Mulund West <span class="locality-number">(413 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Oshiwara, Andheri West <span class="locality-number">(254 places)</span></a>
+                        </li>
+                        <li class="locality">
+                            <a href="#">Kandivali West <span class="locality-number">(575 places)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Apps -->
+            <section class="get-app">
+                <div class="iPhone">
+                    <img src="./images/iphone.png" alt="iphone">
+                </div>
+
+                <div class="get-app-content">
+                    <h5>Get the Zomato App</h5>
+
+                    <p class="see-menu">
+                        See menus and photos for nearby restaurants and bookmarks your Favorite places on the go
+                    </p>
+
+                    <p class="send-link">
+                        We'll send you a link, open it on your phone to download the app
+                    </p>
+
+                    <form action="#">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text app-input">+91</span>
+                            </div>
+
+                            <input type="text" 
+                            class="form-control app-input"
+                            placeholder="Enter your phone number" 
+                            aria-describedby="inputGroupPreepend2"
+                            required
+                            >
+                            <button class="btn app-lin-btn" type="button">Text App Link</button>
+                        </div>
+                    </form>
+
+                    <span class="or">OR</span>
+
+                    <form action="#">
+                        <div class="input-group">
+                            
+
+                            <input type="email" class="form-control app-input"
+                            placeholder="Enter your Email ID" 
+                            aria-describedby="inputGroupPreepend2"
+                            required
+                            >
+                            <button class="btn app-link-btn" type="button">Email App Link</button>
+                        </div>
+                    </form>
+
+                    <div class="app-stores row no-gutters">
+                        <a href="#">
+                            <img src="./images/applestore.png" alt="Apple Store">
+                        </a>
+                        <a href="#">
+                            <img src="./images/googleplay.png" alt="Google Play Store">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics -->
+            <section class="stats">
+                <ul class="stat-list">
+                    <li class="stat">
+                        <span class="value">24</span>
+                        <span class="label">Countries</span>
+                    </li>
+                    <li class="stat">
+                        <span class="value">24</span>
+                        <span class="label">Countries</span>
+                    </li>
+                    <li class="stat">
+                        <span class="value">24</span>
+                        <span class="label">Countries</span>
+                    </li>
+                    <li class="stat">
+                        <span class="value">24</span>
+                        <span class="label">Countries</span>
+                    </li>
+                    <li class="stat">
+                        <span class="value">24</span>
+                        <span class="label">Countries</span>
+                    </li>
+                    <li class="stat">
+                        <span class="value">24</span>
+                        <span class="label">Countries</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-wrapper">
+                <section class="internationalization">
+                    <div>
+                        <img src="./images/zomato_flat_bg_logo.svg" alt="Logo">
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle"
+                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"
+                        >Mumbai</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="#" class="dropdown-item">Mumbai</a>
+                            <a href="#" class="dropdown-item">Delhi</a>
+                            <a href="#" class="dropdown-item">Bangalore</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="footer-nav">
+                    <div>
+                        <h5 class="footer-title">About Zomato</h5>
+
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h5 class="footer-title">For Foodies</h5>
+
+                        <ul>
+                            <li><a href="#">Code of Conduct</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Veified user</a></li>
+                            <li><a href="#">Blogger Help</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nested-nav restaurant">
+                        <h5 class="footer-title">For Restaurants</h5>
+                        <div>
+                        <ul>
+                            <li><a href="#">Add a Restaurants</a></li>
+                            <li><a href="#">Claim your Listing</a></li>
+                            <li><a href="#">Business App</a></li>
+                            <li><a href="#">Business Owner Guidelines</a></li>
+                            <li><a href="#">Business Blog</a></li>
+                            <li><a href="#">Restaurant widgets</a></li>
+                            <li><a href="#">Products for Business</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">Order</a></li>
+                            <li><a href="#">Book</a></li>
+                            <li><a href="#">Trace</a></li>
+                            <li><a href="#">Hyperpure</a></li>
+                            
+                        </ul>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="footer-nav">
+                    <div class="nested-nav">
+                        <h5 class="footer-title">Countries</h5>
+
+                    <div>
+                        <ul>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Brazil</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Chile</a></li>
+                            <li><a href="#">Czech Republic</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Brazil</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Chile</a></li>
+                            <li><a href="#">Czech Republic</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Brazil</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Chile</a></li>
+                            <li><a href="#">Czech Republic</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Brazil</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Chile</a></li>
+                            <li><a href="#">Czech Republic</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Brazil</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Chile</a></li>
+                            <li><a href="#">Czech Republic</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="footer-nav social-nav">
+                    <ul class="footer_horiz_list">
+                        <li><a href="https://www.zomato.com/privacy">Privacy</a></li>
+                        <li><a href="https://www.zomato.com/conditions">Terms</a></li>
+                        <li><a href="https://www.zomato.com/api_policy">API Policy</a></li>
+                        <li><a href="https://www.zomato.com/corporate-social-responsibility">CSR</a></li>
+                        <li><a href="https://www.zomato.com/security">Security</a></li>
+                        <li><a href="https://www.zomato.com/directory">Sitemap</a></li>
+
+                    </ul>
+
+                    <!-- Social Media -->
+                    <ul class="social-container">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/zomato">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/zomato/">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/zomato">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Copyright policies -->
+                <p class="copyright">
+                    Bycontinuing past this page you agree to our
+                    <a href="https://www.zomato.com/conditions" rel="nofollow">Terms of services</a>,
+                    <a href="https://www.zomato.com/cookiepolicy" rel="nofollow">Cookie Policy</a>,
+                    <a href="https://www.zomato.com/privacy" rel="nofollow">Privacy Policy</a>
+                    
+                    and
+                    <a href="https://www.zomato.com/policies" rel="nofollow">Content Policies</a>.
+                    All trademarks are properties of their respective owners. 2008-2019 -
+                    <a href="https://www.zomato.com/nagpur" rel="nofollow">Zomato </a> Media Pvt Ltd.
+                    All rights reserved.
+                </p>
             </div>
-          </div>
-        </div>
-        <div class="card mb-3" style="max-width: 450px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="images/open.jpg" class="card-img" alt="New">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><strong>Newly Opened</strong></h5>
-                <p class="card-text">The best places in town.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="rightcollection">
-        <div class="card mb-3" style="max-width: 450px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="images/mumbai.jpg" class="card-img" alt="Mumbai">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><strong>Best Of Mumbai</strong></h5>
-                <p class="card-text">The hunt for the highest rated restaurants in your city.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3" style="max-width: 450px;">
-          <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="images/surecrisp.jpeg" class="card-img" alt="Healthy">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><strong>SureCrisp Quick Fries</strong></h5>
-                <p class="card-text">Turn up the flavour by ordering SureCrisp fries.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button style="color: red; background-color: white;" type="button" class="btn btn-block">All Collections in Mumbai</button><br>
-    </div>
-    <section class="categories" style="background-color: white;">
-      <h3 class="cat-title"><strong>Quick Searches</strong></h3>
-      <p id="cat-subtitle" style="color: slategrey;">Discover restaurants by type of meal</p>
-      <div id="list">
-        <ul class="category-list container-fluid">
-          <li><img src="images/delivery.png" alt="Delivery" width="80px" height="80px"><br>Delivery</li>
-          <li><img src="images/pocket-friendly-delivery.png" alt="Friendly" width="80px" height="80px"><br>Pocket-Friendly Delivery</li>
-          <li><img src="images/breakfast.png" alt="Breakfast" width="80px" height="80px"><br>Breakfast</li>
-          <li><img src="images/lunch.png" alt="Lunch" width="80px" height="80px"><br>Lunch</li>
-          <li><img src="images/dinner.png" alt="Dinner" width="80px" height="80px"><br>Dinner</li>
-          <li><img src="images/drinks.png" alt="Drinks" width="80px" height="80px"><br>Drinks & Nightlife</li>
-          <li><img src="images/cafes.png" alt="Cafes" width="80px" height="80px"><br>Cafes</li>
-          <li><img src="images/desserts.png" alt="Desserts" width="80px" height="80px"><br>Desserts & Bakes</li>
-        </ul>
-      </div>
-    </section>
-    <section class="localities" style="background-color: white;">
-      <h3 id="loc-title"><strong>Popular localities in and around Mumbai</strong></h3>
-      <p id="loc-subtitle" style="color: slategrey;">Explore restaurants, bars, and cafés by locality</p>
-      <ul class="locality-list-1">
-        <li>Lower Parel <text style="color: slategrey;">(460 places)</text></li>
-        <li>Borivali West <text style="color: slategrey;">(593 places)</text></li>
-        <li>Fort <text style="color: slategrey;">(265 places)</text></li>
-        <li>Colaba <text style="color: slategrey;">(200 places)</text></li>
-        <li>Pali Hill, Bandra West <text style="color: slategrey;">(196 places)</text></li>
-        <li>Veera Desai Area <text style="color: slategrey;">(95 places)</text></li>
-        <li>Panch Pakhadi, Thane West <text style="color: slategrey;">(153 places)</text></li>
-        <li>Mulund West <text style="color: slategrey;">(429 places)</text></li>
-        <li>Oshiwara, Andheri West <text style="color: slategrey;">(256 places)</text></li>
-        <li>Kandivali West <text style="color: slategrey;">(580 places)</text></li>
-      </ul>
-      <ul class=locality-list-2>
-        <li>Powai <text style="color: slategrey;">(592 places)</text></li>
-        <li>Bandra Kurla Complex <text style="color: slategrey;">(121 places)</text></li>
-        <li>Juhu<text style="color: slategrey;">(344 places)</text></li>
-        <li>Linking Road, Bandra West <text style="color: slategrey;">(120 places)</text></li>
-        <li>Chembur <text style="color: slategrey;">(683 places)</text></li>
-        <li>Goregaon East <text style="color: slategrey;">(415 places)</text></li>
-        <li>Worli <text style="color: slategrey;">(263 places)</text></li>
-        <li>Chakala <text style="color: slategrey;">(319 places)</text></li>
-        <li>Mahkali <text style="color: slategrey;">(289 places)</text></li>
-        <li>Churchgate <text style="color: slategrey;">(61 places)</text></li>
-      </ul>
-      <ul class=locality-list-3>
-        <li>Malad West <text style="color: slategrey;">(911 places)</text></li>
-        <li>Vashi <text style="color: slategrey;">(567 places)</text></li>
-        <li>Andheri Lokhandwala, Anderi West <text style="color: slategrey;">(417 places)</text></li>
-        <li>Khar <text style="color: slategrey;">(330 places)</text></li>
-        <li>Marol <text style="color: slategrey;">(355 places)</text></li>
-        <li>Mira Road <text style="color: slategrey;">(987 places)</text></li>
-        <li>Sakinaka <text style="color: slategrey;">(220 places)</text></li>
-        <li>Hill Road, Bandra West <text style="color: slategrey;">(143 places)</text></li>
-        <li>Kharghar <text style="color: slategrey;">(649 places)</text></li>
-        <li>Kandivali East <text style="color: slategrey;">( places)</text></li>
-      </ul>
-    </section>
-    <section class="app">
-      <img id="iphone" src="images/iphone.png" alt="Iphone">
-      <div class="app-text">
-        <h4><strong>Get the Zomato App</strong></h4>
-        <p style="color: slategrey;">See restaurants and menus of nearby restaurants and bookmark your favourite places on the go</p>
-        <p>We'll send you a link,open it on your phone to download the app</p>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Enter phone number" aria-label="Recipient's phone number" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary btn-success" style="color: white;" type="button" id="button-addon2">Test App Link</button>
-          </div>
-        </div>
-        <p style="text-align: center;"><strong>OR</strong></p>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Enter your email id" aria-label="Recipient's email" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary btn-success" style="color: white;" type="button" id="button-addon2">Email App Link</button>
-          </div>
-        </div>
-        <img src="images/applestore.png" alt="AppleStore" height="35px" width="25%">
-        <img src="images/googleplay.png" alt="PlayStore" height="35px" width="25%">
-      </div>        
-    </section>
-    <footer>
-      <div class="footer-wrapper">
-        <img src="images/zomato_flat_bg_logo.svg" alt="Zomato" width="70px" height="70px" style="margin-left:70px; margin-top: 25px;">
-        <div class="dropdown" style="float: right; margin-right: 70px; margin-top: 25px;">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            English
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Hindi</button>
-            <button class="dropdown-item" type="button">Marathi</button>
-            <button class="dropdown-item" type="button">Telegu</button>
-          </div>
-        </div><hr color="slategrey" style="margin-left: 70px;margin-right: 70px;">
-        <div class="aboutzomato" style="max-width: fit-content; display: inline-block; margin-left: 70px;">
-          <p><strong>About Zomato</strong></p>
-          <ul style="list-style: none; font-size: small;cursor: pointer;padding: 0;">
-            <li>About Us</li>
-            <li>Culture</li>
-            <li>Blog</li>
-            <li>Careers</li>
-            <li>Contact</li>
-            <li>ABC</li>
-            <li>ABC</li>
-          </ul>
-        </div>
-        <div class="forfoodies" style="max-width: fit-content; display: inline-block; margin-left: 150px">
-          <p><strong>For Foodies</strong></p>
-          <ul style="list-style-type: none; font-size: small;cursor: pointer;padding: 0;">
-            <li>Code of Conduct</li>
-            <li>Community</li>
-            <li>Verified Users</li>
-            <li>Blogger Help</li>
-            <li>Developers</li>
-            <li>Mobile Apps</li>
-            <li>ABC</li>
-          </ul>
-        </div>
-        <div class="forrestaurants" style="max-width: fit-content; display: inline-block; margin-left: 150px;">
-          <p><strong>For Restaurants</strong></p>
-          <ul style="list-style: none;font-size: small;cursor: pointer;padding: 0;">
-            <li>Add a Restaurant</li>
-            <li>Claim your Listing</li>
-            <li>Business App</li>
-            <li>Business Owner Guidelines</li>
-            <li>Business Blogs</li>
-            <li>Restaurant Widgets</li>
-            <li>Product for Businesses</li>
-          </ul>
-        </div><hr color="slategrey" style="margin-left: 70px;margin-right: 70px;">
-        <div class="countries" style="margin-left: 70px;">
-          <p><strong>Countries</strong></p>
-          <div class="countries1" style="display: inline-block; max-width: fit-content;">
-            <ul style="list-style-type: none; font-size: small;cursor: pointer;padding: 0;">
-              <li>Australia</li>
-              <li>Brazil</li>
-              <li>Canada</li>
-              <li>Chile</li>
-              <li>Czech Republic</li>
-            </ul>
-          </div>
-          <div class="countries2" style="display: inline-block;margin-left: 10%;">
-            <ul style="list-style-type: none; font-size: small;cursor: pointer;padding: 0;">
-              <li>India</li>
-              <li>Indonesia</li>
-              <li>Ireland</li>
-              <li>Italy</li>
-              <li>Lebanon</li>
-            </ul>
-          </div>
-          <div class="countries3" style="display: inline-block;margin-left: 10%;">
-            <ul style="list-style-type: none; font-size: small;cursor: pointer;padding: 0;">
-              <li>Malaysia</li>
-              <li>New Zealand</li>
-              <li>Philippines</li>
-              <li>Poland</li>
-              <li>Portugal</li>
-            </ul>
-          </div>
-          <div class="countries4" style="display: inline-block;margin-left: 10%;">
-            <ul style="list-style-type: none; font-size: small;cursor: pointer;padding: 0;">
-              <li>Qatar</li>
-              <li>Singapore</li>
-              <li>Slovakia</li>
-              <li>South Africa</li>
-              <li>Srilanka</li>
-            </ul>
-          </div>
-          <div class="countries5" style="display: inline-block;margin-left: 10%;">
-            <ul style="list-style-type: none; font-size: small;cursor: pointer;padding: 0;">
-              <li>Turkey</li>
-              <li>UAE</li>
-              <li>United Kingdom</li>
-              <li>United States</li>
-              <li>ABC</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+        </footer>
+</body>
+
 </html>
